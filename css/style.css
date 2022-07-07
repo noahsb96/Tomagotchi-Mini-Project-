@@ -1,6 +1,6 @@
 body {
     background-image: url(/Background.jpg);
-    background-size: 1920px 1100px;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -49,3 +49,4 @@ body {
     border: 1px solid white;
     box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
 }
+
