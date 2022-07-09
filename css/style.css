@@ -1,5 +1,5 @@
 body {
-    background-image: url(/Background.jpg);
+    background-image: url(/Tomagotchi-Mini-Project-/Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -50,3 +50,12 @@ body {
     box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
 }
 
+#tomagotchi {
+    background-color: transparent;
+}
+
+#pet {
+    height: 100px;
+    margin-left: 420px;
+    margin-top: 190px;
+}
