@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomagotchi</title>
-    <link rel="stylesheet" href="/Tomagotchi-Mini-Project-/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -16,7 +16,7 @@
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <span class='close'>&times;</span>
-                        <p>How to play<br>Hunger<br>Your tomagotchi is going to get hungry! If it's hunger level is below 10, feel free to feed it to keep it happy and healthy! If it's hunger level gets to 0, your tomagotchi will starve and be sent to the tomagotchi afterlife<br>Sleepiness<br>Just like us, tomagotchis have some pretty tiring days. If your tomagotchi's sleep level is below 10, feel free to give it some rest. If its sleep level drops to 0, your tomagotchi will be sleep deprived and be sent to the tomagotchi afterlife.<br>Boredom<br>You need to keep your tomagotchi engaged and stimulated. It needs to have some fun too! If your tomagotchi's boredome level is below 10, go ahead and play with it! If its boredome level decreases to 0, your tomagotchi will die from depression and will be sent to the tomagotchi afterlife<br>Age<br>Your tomagotchi will increase in age from the time it is born. Keep it happy and healthy until the end of its days with you. Watch as it grows in size!<br>Have Fun!!!</p>
+                        <h3>How to play</h3><br><h4>Hunger</h4><br><p>Your tomagotchi is going to get hungry! If it's hunger level is below 10, feel free to feed it to keep it happy and healthy! If it's hunger level gets to 0, your tomagotchi will starve and be sent to the tomagotchi afterlife.</p><br><h4>Sleepiness</h4><br><p>Just like us, tomagotchis have some pretty tiring days. If your tomagotchi's sleep level is below 10, feel free to give it some rest. If its sleep level drops to 0, your tomagotchi will be sleep deprived and be sent to the tomagotchi afterlife.</p><br><h4>Boredom</h4><br><p>You need to keep your tomagotchi engaged and stimulated. It needs to have some fun too! If your tomagotchi's boredome level is below 10, go ahead and play with it! If its boredome level decreases to 0, your tomagotchi will die from depression and will be sent to the tomagotchi afterlife</p><br><h4>Age</h4><p><br>Your tomagotchi will increase in age from the time it is born. Keep it happy and healthy until the end of its days with you. Watch as it grows in size!</p><br><h4>Have Fun!!!</h4>
                     </div>
                 </div>
                 <button id="begin">Begin</button>
@@ -26,16 +26,18 @@
             </div>
         </div>
     </nav>
-    <div id="stats" class="box">
-        <span id="hunger">Hunger: </span>
-        <span id="sleep">Sleepiness: </span>
-        <br>
-        <span id="bored">Boredom: </span>
-        <span id="age">Age: </span>
+    <div id = 'box'>
+        <div id="stats" class="statsbox">
+            <span id="hunger">Hunger: </span>
+            <span id="sleep">Sleepiness: </span>
+            <br>
+            <span id="bored">Boredom: </span>
+            <span id="age">Age: </span>
+        </div>
+        <div id = 'tomagotchi'>
+            <img id = 'pet' src="/css/Egg.png" alt="egg">
+        </div>
     </div>
-    <div id = 'tomagotchi'>
-        <img id = 'pet' src="/Tomagotchi-Mini-Project-/css/Egg.png" alt="egg">
-    </div>
-    <script type="text/javascript" src="/Tomagotchi-Mini-Project-/js/app.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>

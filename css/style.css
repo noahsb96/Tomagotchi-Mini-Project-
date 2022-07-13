@@ -1,5 +1,5 @@
 body {
-    background-image: url(/Tomagotchi-Mini-Project-/Background.jpg);
+    background-image: url(/Background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -48,7 +48,7 @@ body {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -75,7 +75,7 @@ body {
     left: 40%;
 }
 
-.box {
+.statsbox {
     font-size: 14px;
     border-radius: 2px;
     padding: 8px;
@@ -86,14 +86,34 @@ body {
     background: white;
     border: 1px solid white;
     box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black;
+    
+}
+
+#sleep {
+    display: flex;
+    float: right;
+}
+
+#age {
+    display: flex;
+    float: right;
 }
 
 #tomagotchi {
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin-top: 22%;
+    margin-right: 7%;
+    height: 200px;
+    animation: floating 3s ease-in-out infinite
 }
 
-#pet {
-    height: 200px;
-    margin-left: 720px;
-    margin-top: 450px;
+.pet {
+    max-width: 200px;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
 }
