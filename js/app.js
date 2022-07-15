@@ -62,7 +62,7 @@ class Pet {
             } 
     
             else if(this.hunger <= 0 || this.sleepiness <= 0 || this.boredom <= 0) {
-                document.getElementById('pet').src='../ghost-clipart-transparent-background-808673.png'
+                document.getElementById('pet').src='./ghost-clipart-transparent-background-808673.png'
                 alert(`${this.name} has gone to Tomagotchi heaven`)
                 clearInterval(startTimer)
                 document.getElementById("begin").disabled = false
@@ -81,9 +81,9 @@ class Pet {
     sleep() {
         this.sleepiness++
         sleepiness.innerHTML = (`Sleepiness: ${this.sleepiness}`)
-        document.body.style.backgroundImage="url(../lightsoff.png)"
+        document.body.style.backgroundImage="url(./lightsoff.png)"
         function lightsOn() {
-            document.body.style.backgroundImage="url(../Background.jpg)"
+            document.body.style.backgroundImage="url(./Background.jpg)"
         }
         setTimeout(lightsOn, 1000)
     }
@@ -97,23 +97,23 @@ class Pet {
         let ageClock = setInterval(() => {
             this.age++
             if (this.age === 10) {
-                document.getElementById('pet').src='../NicePng_tamagotchi-png_3497120.png'
+                document.getElementById('pet').src='./NicePng_tamagotchi-png_3497120.png'
                 alert(`${this.name} has hatched and is now a baby!`)
             }
             if (this.age === 20) {
-                document.getElementById('pet').src='../pngwing.com.png'
+                document.getElementById('pet').src='./pngwing.com.png'
                 alert(`${this.name} has grown from a baby to a child!`)
             }
             if (this.age === 30) {
-                document.getElementById('pet').src='../com_tamagotchi-png_3497548.png'
+                document.getElementById('pet').src='./com_tamagotchi-png_3497548.png'
                 alert(`${this.name} has grown from a child to a teenager!`)
             }
             if (this.age === 40) {
-                document.getElementById('pet').src='../pngegg.png'
+                document.getElementById('pet').src='./pngegg.png'
                 alert(`${this.name} has grown from a teenager to an adult!`)
             }
             if (this.age === 50) {
-                document.getElementById('pet').src='../kisspng-lovelin-portable-network-graphics-image-character-tamagotchi-mxcharacter-list-tamagotchi-wiki-fand-5d1337e1cc34f4.6405991715615405778364.png'
+                document.getElementById('pet').src='./kisspng-lovelin-portable-network-graphics-image-character-tamagotchi-mxcharacter-list-tamagotchi-wiki-fand-5d1337e1cc34f4.6405991715615405778364.png'
                 alert(`${this.name} has grown from an adult to an senior!`)
                 clearInterval(ageClock)
             }
